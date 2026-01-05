@@ -26,3 +26,4 @@ venv/
 Thumbs.db
 
 brain_preprocessing.py
+train2.py 
