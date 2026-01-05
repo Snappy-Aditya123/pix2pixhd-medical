@@ -18,11 +18,14 @@ Downstream evaluation is performed using a U-Net segmentation model trained with
 ---
 
 ## Code Attribution
-The pix2pixHD model implementation is adapted from the official NVIDIA repository:
+This project builds upon the pix2pixHD framework originally developed by NVIDIA and released under a BSD-style license.
 
-- https://github.com/NVIDIA/pix2pixHD
+- Ting-Chun Wang, Ming-Yu Liu, Jun-Yan Zhu, et al.  
+  *High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs* (CVPR 2018)  
+  Official implementation: https://github.com/NVIDIA/pix2pixHD
 
-The code has been modified to support medical image synthesis workflows, dataset-specific preprocessing, and downstream segmentation evaluation.
+Portions of the pix2pixHD codebase have been adapted and modified to support medical image synthesis, dataset-specific preprocessing, and downstream segmentation evaluation. The original copyright notice and license are retained in accordance with the BSD license.
+
 
 ---
 
