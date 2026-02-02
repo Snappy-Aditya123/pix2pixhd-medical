@@ -5,6 +5,24 @@ from torch.autograd import Variable
 import numpy as np
 
 #this code is borrowed from nvidia pixel to pixel  https://github.com/NVIDIA/pix2pixHD
+# This project includes code derived from the following third-party projects:
+
+# --------------------------------------------------
+# pix2pixHD
+# Copyright (c) 2019 NVIDIA Corporation
+# Licensed under the BSD License.
+
+# Original repository:
+# https://github.com/NVIDIA/pix2pixHD
+
+# --------------------------------------------------
+# pytorch-CycleGAN-and-pix2pix
+# Copyright (c) 2017 Jun-Yan Zhu and Taesung Park
+# Licensed under the BSD License.
+
+# Original repository:
+# https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+
 def weights_init(m):
     classname = m.__class__.__name__
     if classname.find('Conv') != -1:
