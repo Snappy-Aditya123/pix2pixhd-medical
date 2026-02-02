@@ -51,7 +51,7 @@ Bissoto, A., Perez, F., Valle, E., Avila, S.
 *Skin Lesion Synthesis with Generative Adversarial Networks*,  
 OR 2.0 / ISIC Workshop @ MICCAI 2018.
 
-Minor simplifications were applied for computational efficiency and consistency across datasets.
+
 
 
 ---
