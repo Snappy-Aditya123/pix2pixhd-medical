@@ -14,7 +14,7 @@ from netwroks import (
     GlobalGenerator,
     VGGLoss
 )
-
+#This is implementation of ISIC skin lesion training
 
 def train_pix2pixHD(params, train_loader):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -139,9 +139,9 @@ params = {
     "checkpoints_dir": "./checkpoints_pix2pixHD",
 }
 if __name__ == "__main__":
-    image_dir = r"C:\Users\as0118d\Desktop\gans2\export\images_512p"
-    semantic_dir = r"C:\Users\as0118d\Desktop\gans2\export\semantic512"
-    instance_dir = r"C:\Users\as0118d\Desktop\gans2\export\bordermap512"
+    image_dir = r"C:\Users\ad\Desktop\gans2\export\images_512p"
+    semantic_dir = r"C:\Users\ad\Desktop\gans2\export\semantic512"
+    instance_dir = r"C:\Users\ad\Desktop\gans2\export\bordermap512"
     train_ds = SkinLesionDataset(
         img_dir=image_dir,
         semantic_dir=semantic_dir,

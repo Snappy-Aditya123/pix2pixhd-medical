@@ -1,6 +1,6 @@
 from modelfunc import *
 
-
+#Data Loader for ISIC Skin Lesion training
 class SkinLesionDataset(Dataset):
     def __init__(self, img_dir, semantic_dir, instance_dir, size=(256, 256)):
         self.img_dir = img_dir
@@ -51,7 +51,7 @@ class SkinLesionDataset(Dataset):
     def __len__(self):
         return len(self.families)
     
-
+#Data Loader for LGG training
 class BrainTumorDataset(Dataset):
     def __init__(self, root_dir, direction='AtoB', transform=None):
         self.root_dir = root_dir
@@ -93,6 +93,7 @@ def get_brain_loader(dataset_path, batch_size=4, direction='AtoB'):
     loader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=2)
     return loader
 
+#Data Loader for Downstream Segmentation task
 class SegDataSet(Dataset):
     def __init__(self, base_dir, image_dir, mask_dir, type="lesion"):
         self.base_dir = base_dir

@@ -24,7 +24,7 @@ from torch.autograd import Variable
 import numpy as np
 import torch.nn.functional as F
 import torchvision.models as models
-#this code is borrowed from nvidia pixel to pixel 
+#this code is borrowed from nvidia pixel to pixel code https://github.com/NVIDIA/pix2pixHD
 def weights_init(m):
     #Initialize only real Conv2d and BatchNorm/InstanceNorm layers
     if isinstance(m, nn.Conv2d):
